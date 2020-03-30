@@ -28,6 +28,7 @@ p {
 }
 
 /* NOTE: SITE TEMPLATE */
+@media (max-width:900px){
 .container {
 	display:grid;
 	grid-template-columns: 100%;
@@ -40,6 +41,7 @@ p {
 /* NOTE: Keep footer at the bottom of the page */
 	position: relative;
 	min-height: 100vh;
+}
 }
 /* NOTE: Logo */
 #lg {

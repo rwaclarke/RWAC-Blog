@@ -42,7 +42,7 @@ p {
 	position: relative;
 	min-height: 100vh;
 }
-}
+
 /* NOTE: Logo */
 #lg {
 	grid-area: lg;
@@ -129,10 +129,10 @@ p {
 	bottom: auto;
 	height: 40px;
 }
-
+}
 
 /* DESKTOP */
-@media (min-width:901px) {
+@media  only screen and  (min-width:901px) {
 	/* NOTE: Main Area */
 	body {
 		font-family: 'Nova Mono', monospace;

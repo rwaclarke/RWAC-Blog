@@ -28,7 +28,7 @@ p {
 }
 
 /* NOTE: SITE TEMPLATE */
-@media  only screen and (max-width:900px){
+@media (max-width:900px){
 .container {
 	display:grid;
 	grid-template-columns: 100%;
@@ -42,7 +42,7 @@ p {
 	position: relative;
 	min-height: 100vh;
 }
-
+}
 /* NOTE: Logo */
 #lg {
 	grid-area: lg;
@@ -132,7 +132,7 @@ p {
 }
 
 /* DESKTOP */
-@media  only screen and  (min-width:901px) {
+@media (min-width:901px) {
 	/* NOTE: Main Area */
 	body {
 		font-family: 'Nova Mono', monospace;

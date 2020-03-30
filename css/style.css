@@ -1,0 +1,265 @@
+/* NOTE: Mobile View 320px*/
+/* NOTE: Main Area */
+body {
+	font-family: 'Nova Mono', monospace;
+}
+h1 {
+	font-family: 'Share Tech Mono', monospace;
+	font-size: 50px;
+	font-weight: bolder;
+}
+h2 {
+	font-family: 'Share Tech Mono', monospace;
+	font-size: 23px;
+}
+h3 {
+
+}
+h4 {
+	margin: 10px 0;
+}
+p {
+    margin: 10px 0 15px 0;
+}
+.title {
+	margin: auto;
+	text-align: center;
+	line-height: 1px;
+}
+
+/* NOTE: SITE TEMPLATE */
+.container {
+	display:grid;
+	grid-template-columns: 100%;
+	grid-template-areas:
+	"lg"
+	"hd"
+	"lp"
+	"main"
+	"ft";
+/* NOTE: Keep footer at the bottom of the page */
+	position: relative;
+	min-height: 100vh;
+}
+/* NOTE: Logo */
+#lg {
+	grid-area: lg;
+    background-color: #D943A4;
+    padding: 15px;
+}
+.logo {
+	display: block;
+	max-width: 300px;
+	margin: auto;
+	align-content: center;
+	border-radius: 22px;
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+}
+
+/* NOTE: Header */
+#hd {
+	grid-area: hd;
+	background-color: #25A6D9;
+	color: #FBFFFD;
+}
+#latest-posts{
+	grid-area: lp;
+	background-color: #BF604B;
+	padding: 8px 0 8px 0;
+	color: #FBFFFD;
+	text-align: center;
+	font-size: 80px;
+	font-weight: bold;
+}
+
+/* NOTE: Sidebar */
+#sd {
+	grid-area: sd;
+}
+
+
+
+/* NOTE: Content */
+#main {
+	border: none;
+	display: grid;
+	grid-area: main;
+	grid-gap: 5px;
+	grid-template-areas: "rw";
+	grid-template-columns: 100%;
+	grid-template-rows: auto;
+	background-color: #D9A84E;
+/* NOTE: Keep footer at the bottom of the page */
+	padding-bottom: 40px;
+}
+.thumbnail{
+	width: 100%;
+}
+.post{
+	margin: 10px 0 10px 0;
+	padding: 10px 20px 10px 20px;
+	/*border: 1px solid #ebeaea;
+	border-radius: 10px;*/
+}
+.readMore{
+	font-family: 'Nova Mono', monospace;
+    background: black;
+    color: white;
+    width: 100%;
+    height: auto;
+    font-size: 20px;
+    padding: 12px;
+	cursor: pointer;
+}
+
+
+/* NOTE: Footer */
+#ft {
+	grid-area: ft;
+	background-color: #0D0D0D;
+	width: 100%;
+	color: #FBFFFD;
+	text-align: center;
+/* NOTE: Keep footer at the bottom of the page */
+	position: absolute;
+	bottom: auto;
+	height: 40px;
+}
+
+
+/* DESKTOP */
+@media (min-width:901px) {
+	/* NOTE: Main Area */
+	body {
+		font-family: 'Nova Mono', monospace;
+	}
+	h1 {
+		font-family: 'Share Tech Mono', monospace;
+		font-size: 100px;
+		font-weight: bolder;
+	}
+	h2 {
+		font-family: 'Share Tech Mono', monospace;
+		font-size: 40px;
+	}
+	h3 {
+
+	}
+	h4 {
+		margin: 10px 0;
+	}
+	p {
+	    margin: 10px 0 15px 0;
+	}
+
+
+
+/* NOTE: SITE TEMPLATE */
+	.container {
+		display: grid;
+		grid-template-columns: 40px 250px;
+		grid-template-rows: auto;
+		grid-template-areas:
+		"lg lg hd hd hd"
+		"sd sd lp lp lp"
+		"sd sd main main main"
+		"ft ft ft ft ft";
+	/* NOTE: Keep footer at the bottom of the page */
+		position: relative;
+		min-height: 100vh;
+	}
+
+
+/* NOTE: Logo */
+	#lg {
+		grid-area: lg;
+	}
+	.logo {
+		display: block;
+		height: 120px;
+		width: auto;
+		margin: auto;
+		border: 1px solid #222222;
+	}
+/* NOTE: Header */
+	#hd {
+		grid-area: hd;
+	}
+	.title {
+		margin: auto;
+		text-align: center;
+		line-height: 1px;
+	}
+
+	#latest-posts{
+		grid-area: lp;
+		background-color: #BF604B;
+		padding: 8px 0 8px 6%;
+	    color: #FBFFFD;
+	    text-align: left;
+	    font-size: 45px;
+		font-weight: bold;
+	}
+/* NOTE: Sidebar */
+	#sd {
+		grid-area: sd;
+		background-color: #0D0D0D;
+		text-align: center;
+	}
+/* NOTE: Menu */
+	#menu{
+	font-size: 22px;
+
+	}
+	ul {
+		display: inline-block;
+		list-style: none;
+		padding: 0;
+	}
+	li {
+		padding: 10px
+	}
+/* NOTE: Content */
+	#main {
+		display: grid;
+		width: 100%;
+		margin: auto;
+	/*	grid-auto-rows: minmax(50px, 135px); */
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-gap: 5px;
+		justify-content: center;
+	}
+
+/* NOTE: Footer */
+	#ft {
+		grid-area: ft;
+		background-color: #0D0D0D;
+		width: 100%;
+		color: #FBFFFD;
+		text-align: center;
+	/* NOTE: Keep footer at the bottom of the page */
+		position: absolute;
+		bottom: auto;
+		height: 40px;
+	}
+
+	.readMore{
+		font-family: 'Nova Mono', monospace;
+	    background: black;
+		border: none;
+	    color: white;
+	    width: 100%;
+	    height: auto;
+	    font-size: 20px;
+	    padding: 12px;
+		cursor: pointer;
+	}
+	}
+	.readMore,a {
+		text-decoration: none;
+		color: #fffff8;
+	}
+
+}

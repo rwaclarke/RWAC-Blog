@@ -28,7 +28,7 @@ p {
 }
 
 /* NOTE: SITE TEMPLATE */
-@media (max-width:900px){
+@media (max-width: 900px){
 .container {
 	display:grid;
 	grid-template-columns: 100%;
@@ -131,7 +131,7 @@ p {
 }
 
 /* DESKTOP */
-@media (min-width:901px) {
+@media (min-width: 901px) {
 	/* NOTE: Main Area */
 	body {
 		font-family: 'Nova Mono', monospace;
@@ -210,7 +210,7 @@ p {
 		text-align: center;
 	}
 /* NOTE: Menu */
-	#menu{
+	#menu {
 	font-size: 22px;
 
 	}
